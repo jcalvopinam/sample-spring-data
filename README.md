@@ -1,9 +1,10 @@
 Spring Data JPA Sample
 ---
 
-This is a basic sample of Spring Data JPA, and I used the following technologies:
+This is a basic sample of Spring Data JPA with RESTful services, and I used the following technologies:
 * Spring Boot 1.5.2.RELEASE
 * Spring Data
+* MySQL Database
 
 How to run?
 ---
