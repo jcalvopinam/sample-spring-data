@@ -22,13 +22,52 @@
  * SOFTWARE.
  */
 
-package com.jcalvopinam.repository;
+package com.jcalvopinam.controller;
 
+import com.jcalvopinam.service.PersonService;
 import com.jcalvopinam.model.Person;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author Juan Calvopina M. <juan.calvopina@gmail.com>
  */
-public interface PersonRepository extends JpaRepository<Person, Long> {
+@RestController
+@RequestMapping("/people")
+public class PersonController {
+
+    private final PersonService personService;
+
+    @Autowired
+    public PersonController(PersonService personService) {
+        this.personService = personService;
+    }
+
+    @GetMapping
+    public List<Person> getPersons() {
+        return personService.getAll();
+    }
+
+    @GetMapping("/{id}")
+    public Person getPerson(@PathVariable("id") Long id) {
+        return personService.get(id);
+    }
+
+    @PostMapping
+    public Person createPerson(@RequestBody Person person) {
+        return personService.create(person);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deletePerson(@PathVariable Long id) {
+        return personService.delete(id);
+    }
+
+    @PutMapping("/{id}")
+    public Person updatePerson(@PathVariable Long id, @RequestBody Person person) {
+        return personService.update(id, person);
+    }
+
 }

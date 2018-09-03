@@ -1,79 +1,90 @@
 {
-	"variables": [],
-	"info": {
-		"name": "sample-spring-data",
-		"_postman_id": "a07515cb-5467-cbed-8761-07820699f8af",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "http://localhost:8080/sample-spring-data/person/persons",
-			"request": {
-				"url": "http://localhost:8080/sample-spring-data/person/persons",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/sample-spring-data/person/persons/1",
-			"request": {
-				"url": "http://localhost:8080/sample-spring-data/person/persons/1",
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/sample-spring-data/person/persons/1",
-			"request": {
-				"url": "http://localhost:8080/sample-spring-data/person/persons/1",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"name\":\"Juan\",\n\t\"lastName\":\"Calvopina\",\n\t\"age\":25,\n\t\"email\":\"juan.calvopina+dev@gmail.com\",\n\t\"phoneNumber\":11123321,\n\t\"signedUp\":\"2017-04-17\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/sample-spring-data/person/persons",
-			"request": {
-				"url": "http://localhost:8080/sample-spring-data/person/persons",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"name\":\"Juan\",\n\t\"lastName\":\"Calvopina\",\n\t\"age\":30,\n\t\"email\":\"juan.calvopina+dev@gmail.com\",\n\t\"phoneNumber\":11123321,\n\t\"signedUp\":\"2017-04-17\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		}
-	]
+  "variables": [],
+  "info": {
+    "name": "sample-spring-data",
+    "_postman_id": "a07515cb-5467-cbed-8761-07820699f8af",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/sample-spring-data/people/",
+      "request": {
+        "url": "http://localhost:8080/sample-spring-data/people/",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/sample-spring-data/people/1",
+      "request": {
+        "url": "http://localhost:8080/sample-spring-data/people/1",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/sample-spring-data/people/1",
+      "request": {
+        "url": "http://localhost:8080/sample-spring-data/people/1",
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/sample-spring-data/people/1",
+      "request": {
+        "url": "http://localhost:8080/sample-spring-data/people/1",
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\":\"Juan\",\n\t\"lastName\":\"Calvopina\",\n\t\"age\":25,\n\t\"email\":\"juan.calvopina@gmail.com\",\n\t\"phoneNumber\":11123321,\n\t\"signedUp\":\"2017-04-17\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/sample-spring-data/people/",
+      "request": {
+        "url": "http://localhost:8080/sample-spring-data/people/",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\":\"Juan\",\n\t\"lastName\":\"Calvopina\",\n\t\"age\":30,\n\t\"email\":\"juan.calvopina@gmail.com\",\n\t\"phoneNumber\":101010101,\n\t\"signedUp\":\"2017-04-17\"\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
 }

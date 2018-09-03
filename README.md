@@ -1,19 +1,19 @@
 Spring Data JPA Sample
 ---
 
-This is a basic sample of Spring Data JPA with RESTful services, and I used the following technologies:
-* Spring Boot 1.5.2.RELEASE
-* Spring Data
-* MySQL Database
+This is a sample of Spring Data JPA with the basic CRUD operation and REST services, and I used the following technologies:
+* Spring Boot 2.0.4.RELEASE
+* Spring Data JPA 2.0.4.RELEASE
+* MySQL Database 5.5
 
 How to run?
 ---
 
-1. Compile the project with the following command:
+1. Download dependencies and compile the project with the following command:
 
    ```mvn clean install```
 
-2. The project is a Spring Boot Application, so you can run inside of your ide or from terminal with the following command:
+2. The project is a Spring Boot Application, so you can run inside of your IDE or from terminal with the following command:
 
    ```mvn spring-boot:run```
 
